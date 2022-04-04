@@ -1,5 +1,8 @@
 package com.animationsrn;
 
+// CONFIG TO REACT NAVIGATION - REACT NATIVE SCREENS
+import android.os.Bundle;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
@@ -36,5 +39,11 @@ public class MainActivity extends ReactActivity {
       reactRootView.setIsFabric(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED);
       return reactRootView;
     }
+  }
+  
+  // CONFIG TO REACT NAVIGATION - REACT NATIVE SCREENS
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 }
