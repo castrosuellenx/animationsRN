@@ -9,7 +9,8 @@ import Routes from './routes';
 
 const App: React.FC = () => {
   return (
-    <GestureHandlerRootView>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <GestureHandlerRootView style={{flex: 1}}>
       <NavigationContainer>
         <Routes />
       </NavigationContainer>
